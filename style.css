@@ -158,9 +158,76 @@ ul {
     color: #FF900E;
 }
 
-
 /* feature list section style end -----
 --------------------------------------*/
+
+/* feature details section style started  */
+.architect-image {
+    position: relative;
+}
+
+.architects-experience {
+    background-color: #FF900E;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 42px 46px;
+    margin-top: -100px;
+    position: absolute;
+    bottom: -80px;
+    left: -60px;
+}
+
+.architects-experience h1 {
+    font-size: 65px;
+    margin: 0 0 7px 0;
+
+}
+
+.architects-experience p {
+    font-size: 25px;
+    margin: 0;
+}
+
+#feature-details-heading {
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 4px solid #FF900E;
+
+}
+
+.feature-details-contents {
+    color: rgb(97, 97, 97);
+    line-height: 22px;
+}
+
+.feature-details {
+    padding-right: 150px;
+}
+
+.feature-details ul {
+    list-style: none;
+}
+
+.feature-details h5 {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.feature-details li>p {
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+
+
+
+
+/* feature details section style end-----
+-----------------------------------------  */
 
 /*--------------------------
 ------ main style end ------
@@ -196,6 +263,47 @@ ul {
 
     .standard-width {
         width: 100%;
+    }
+
+    #feature-details-heading {
+
+        font-size: 30px;
+
+    }
+
+    .feature-details-contents {
+        font-size: 14px;
+    }
+
+    .feature-details {
+        padding: 20px;
+    }
+
+    .feature-details li>p {
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .architect-image-main {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .architect-image img {
+        width: 100%;
+    }
+
+    .architects-experience {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 300px;
+
+    }
+
+    .feature-details-main {
+        margin-top: 0;
     }
 }
 
@@ -241,6 +349,20 @@ ul {
     .banner img {
         margin: 30px 0;
     }
+
+    .architects-experience {
+        width: 200px;
+    }
+
+    .architects-experience h1 {
+        font-size: 45px;
+
+    }
+
+    .architects-experience p {
+        font-size: 16px;
+        margin: 0;
+    }
 }
 
 /* for mobile devices maximum width 480px */
@@ -267,6 +389,17 @@ ul {
     .feature-content {
         padding: 0;
     }
+
+    .architects-experience {
+        width: 150px;
+    }
+
+    .architects-experience h1 {
+        font-size: 35px;
+
+    }
+
+
 
 }
 
