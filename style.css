@@ -1,7 +1,9 @@
 /* import font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 
-/* common styles started */
+/*------------------------------
+------common styles started----- 
+--------------------------------*/
 body {
     margin: 0;
     padding: 0;
@@ -14,9 +16,34 @@ body {
     padding: 0 228px;
 }
 
+.button-style {
+    background-color: #FF900E;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
 
-/* common styles end */
-/* header style started  */
+.button-style:hover {
+    border: 2px solid #FF900E;
+    background-color: #ff8f0e00;
+    color: #FF900E;
+}
+
+.standard-width {
+    width: 50%;
+}
+
+/*-------------------------------
+------- common styles end ------- 
+---------------------------------*/
+
+
+/*-------------------------------
+------header style started-------  
+---------------------------------*/
 header {
     display: flex;
     align-items: center;
@@ -48,10 +75,97 @@ header {
     display: flex;
 }
 
-/* header style end  */
-/* main style started  */
+/*---------------------------- 
+-------header style end-------  
+------------------------------*/
 
-/* main style end  */
+/*--------------------------
+----- main style started ---
+---------------------------- */
+
+/* site identity banner style started  */
+.banner {
+    background-color: #FFF4E7;
+    padding-top: 10px !important;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.banner p {
+    color: rgb(97, 97, 97);
+    margin-bottom: 32px;
+    line-height: 22px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+}
+
+/* site identity banner style end --
+-------------------------------------- */
+
+/* feature list section style started */
+.feature-list {
+    display: flex;
+    margin-top: 85px;
+    align-items: center;
+}
+
+.feature-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    justify-content: space-between;
+    padding: 36px;
+}
+
+.feature-images img {
+    width: 100%;
+    height: 100%;
+}
+
+.feature-content {
+    padding: 36px;
+}
+
+.feature-content h1 {
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.feature-content p,
+ul {
+    color: rgb(97, 97, 97);
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+
+
+#featur-title-part1 {
+    font-weight: 500;
+    color: rgb(97, 97, 97);
+}
+
+#featur-title-part2 {
+    color: #FF900E;
+}
+
+
+/* feature list section style end -----
+--------------------------------------*/
+
+/*--------------------------
+------ main style end ------
+---------------------------- */
+
 /* footer style started  */
 
 /* footer style end  */
@@ -66,13 +180,44 @@ header {
 }
 
 /* for large screen device(like desktop) maximum width 1200px */
-@media screen and (max-width:1200px) {}
+@media screen and (max-width:1200px) {
+    .feature-content h1 {
+        font-size: 30px;
+    }
+
+    .feature-content p,
+    ul {
+        font-size: 14px;
+    }
+
+    .feature-list {
+        flex-direction: column;
+    }
+
+    .standard-width {
+        width: 100%;
+    }
+}
 
 /* for small screen device(like laptop) maximum width 1024px */
 @media screen and (max-width:1024px) {
     .menu-main li {
         margin-left: 30px;
     }
+
+    .button-style {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+    }
+
+    .banner p {
+        font-size: 14px;
+    }
+
 }
 
 /* for iPads & tablets maximum width 768px */
@@ -92,10 +237,38 @@ header {
     .menu-main ul {
         flex-direction: column;
     }
+
+    .banner img {
+        margin: 30px 0;
+    }
 }
 
 /* for mobile devices maximum width 480px */
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
+    .banner p {
+        margin-bottom: 15px;
+    }
+
+    .feature-images {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .feature-content {
+        padding: 0;
+    }
+
+}
 
 
 
