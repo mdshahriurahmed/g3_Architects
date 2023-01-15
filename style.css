@@ -252,6 +252,11 @@ ul {
     justify-items: center;
 }
 
+.facts-card:hover {
+    transform: scale(1.2);
+    transition: 2s;
+}
+
 .facts-card {
     width: 241px;
     height: 241px;
