@@ -374,6 +374,15 @@ ul {
 ---------------------------- */
 
 /* footer style started  */
+footer {
+    background-color: #FFF4E7;
+}
+
+footer p {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+}
 
 /* footer style end  */
 
