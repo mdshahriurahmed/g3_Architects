@@ -275,7 +275,11 @@ ul {
     margin: 0;
 }
 
-/* some facts section style end */
+/*---------------------------------
+--- some facts section style end --*/
+
+
+/* our sponsors section style started */
 .our-sponsors {
     margin-top: 100px;
     text-align: center;
@@ -308,8 +312,62 @@ ul {
     justify-items: center;
 }
 
-/* our sponsors section style started */
 /* our sponsors section style end */
+
+/* clients feedback section style started */
+.feedback {
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+.feedback h1 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+.feedback p {
+    color: rgb(97, 97, 97);
+    line-height: 22px;
+    text-align: center;
+}
+
+.feedback-card {
+    height: 300px;
+    width: 260px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.274);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid #FF900E;
+    overflow: hidden;
+}
+
+.feedback-card h3 {
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.feedback-card i {
+    color: #FF900E;
+    margin: 2px;
+}
+
+.facts-card p {
+    margin-bottom: 0;
+}
+
+/* clients feedback section style end */
 
 /*--------------------------
 ------ main style end ------
@@ -321,8 +379,8 @@ ul {
 
 /* media queries for responsive layout started*/
 
-/* for devicec whose screen screen  maximum width 1400px */
-@media screen and (max-width:1400px) {
+/* for devicec whose screen screen  maximum width 1500px */
+@media screen and (max-width:1500px) {
     .container {
         padding: 0 50px;
     }
@@ -403,6 +461,11 @@ ul {
 
     .our-sponsors-grid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .feedback h1 {
+        font-size: 30px;
+
     }
 
 }
